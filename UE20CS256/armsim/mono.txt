@@ -1,0 +1,31 @@
+System.EntryPointNotFoundException: HIViewPlaceInSuperviewAt assembly:<unknown assembly> type:<unknown type> member:(null)
+  at (wrapper managed-to-native) System.Windows.Forms.XplatUICarbon.HIViewPlaceInSuperviewAt(intptr,single,single)
+  at System.Windows.Forms.XplatUICarbon.SetParent (System.IntPtr handle, System.IntPtr parent) [0x00096] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.XplatUI.SetParent (System.IntPtr handle, System.IntPtr hParent) [0x00000] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.Control.CreateHandle () [0x000c1] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.Control.CreateControl () [0x00039] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at (wrapper remoting-invoke-with-check) System.Windows.Forms.Control.CreateControl()
+  at System.Windows.Forms.Control.CreateControl () [0x00072] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.Control.WmShowWindow (System.Windows.Forms.Message& m) [0x00036] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.Control.WndProc (System.Windows.Forms.Message& m) [0x00214] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.ScrollableControl.WndProc (System.Windows.Forms.Message& m) [0x00000] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.Control+ControlWindowTarget.OnMessage (System.Windows.Forms.Message& m) [0x00000] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.Control+ControlNativeWindow.WndProc (System.Windows.Forms.Message& m) [0x0000b] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.NativeWindow.WndProc (System.IntPtr hWnd, System.Windows.Forms.Msg msg, System.IntPtr wParam, System.IntPtr lParam) [0x00085] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+System.EntryPointNotFoundException: HIViewPlaceInSuperviewAt assembly:<unknown assembly> type:<unknown type> member:(null)
+  at (wrapper managed-to-native) System.Windows.Forms.XplatUICarbon.HIViewPlaceInSuperviewAt(intptr,single,single)
+  at System.Windows.Forms.XplatUICarbon.SetParent (System.IntPtr handle, System.IntPtr parent) [0x00096] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.XplatUI.SetParent (System.IntPtr handle, System.IntPtr hParent) [0x00000] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.Control.CreateHandle () [0x000c1] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.Control.CreateControl () [0x00039] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at (wrapper remoting-invoke-with-check) System.Windows.Forms.Control.CreateControl()
+  at System.Windows.Forms.Control.CreateControl () [0x00072] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.Control.WmShowWindow (System.Windows.Forms.Message& m) [0x00036] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.Control.WndProc (System.Windows.Forms.Message& m) [0x00214] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.ScrollableControl.WndProc (System.Windows.Forms.Message& m) [0x00000] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.ContainerControl.WndProc (System.Windows.Forms.Message& m) [0x00027] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.Form.WndProc (System.Windows.Forms.Message& m) [0x00166] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at ARMSim.GUI.ARMSimForm.WndProc (System.Windows.Forms.Message& m) [0x00029] in <5e19e569f31e4cc8bebc17aca8d8e731>:0 
+  at System.Windows.Forms.Control+ControlWindowTarget.OnMessage (System.Windows.Forms.Message& m) [0x00000] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.Control+ControlNativeWindow.WndProc (System.Windows.Forms.Message& m) [0x0000b] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
+  at System.Windows.Forms.NativeWindow.WndProc (System.IntPtr hWnd, System.Windows.Forms.Msg msg, System.IntPtr wParam, System.IntPtr lParam) [0x00085] in <8d4e0a7dd86f4d10848b9fed49dd219c>:0 
