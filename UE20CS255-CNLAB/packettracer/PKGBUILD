@@ -1,0 +1,43 @@
+pkgname=packettracer
+pkgver=8.1.0
+pkgrel=1
+pkgdesc="A cross-platform visual simulation tool designed by Cisco Systems that allows users to create network topologies and imitate modern computer network"
+arch=( 'x86_64' )
+depends=('openssl>=1.0' 'dbus' 'icu' 'glib2' 'libxml2' 'libjpeg-turbo' 'nss' 'libxss' 'java-runtime>=1.7.0')
+options=('!strip' '!emptydirs')
+url="https://www.netacad.com/courses/packet-tracer"
+license=('custom')
+
+source=('CiscoPacketTracer_810_Ubuntu_64bit.deb'
+	'packettracer.sh')
+sha512sums=('0eb696d755771bdecff1f84616d973e8578149b1eb3272faa3f7c914be3a13165874dcedffb643dc1e7395f9df06fabc0ce3b11327ed2d358c0b6dcb14605a65'
+	    '639947d7a388ff3c787c359504295c6890de763ee61edd04c6dde3913a1bf49c3e2c91cfadadc759169da4d72f09fe6493a35c56d9fd6de0443ae9e9140b8f5f')
+
+package() {
+
+	tar xf data.tar.xz -C "${pkgdir}"
+	chown -R 0:0 ${pkgdir}
+	mv ${pkgdir}/opt/pt/ ${pkgdir}/opt/packettracer/
+	mkdir -p "${pkgdir}/usr/bin/"
+
+	find "${pkgdir}" -type d -exec chmod 755 {} \;
+	find "${pkgdir}/opt/packettracer/help/" -type d -exec chmod 777 {} \;
+	find "${pkgdir}/opt/packettracer/saves/" -type d -exec chmod 555 {} \;
+	find "${pkgdir}/opt/packettracer/art/html/network_controller/" -type d -exec chmod 775 {} \;
+	find "${pkgdir}/opt/packettracer/art/RackView/CablePegboard/" -type d -exec chmod 775 {} \;
+	find "${pkgdir}/opt/packettracer/bin/xcbglintegrations/" -type d -exec chmod 775 {} \;
+	find "${pkgdir}/opt/packettracer/help/default/NetconRestAPI/" -type d -exec chmod 775 {} \;
+	
+	ln -s /opt/packettracer/packettracer "${pkgdir}/usr/bin/packettracer"
+
+	ln -s /usr/lib/libdouble-conversion.so "${pkgdir}/opt/packettracer/bin/libdouble-conversion.so.1"
+
+	sed -i 's|/opt/pt|/opt/packettracer|' "${pkgdir}/opt/packettracer/linguist" "${pkgdir}/opt/packettracer/packettracer" "${pkgdir}/usr/share/applications/cisco-pt.desktop" "${pkgdir}/usr/share/applications/cisco-ptsa.desktop"
+
+	sed -i -e "\$aCategories=Network;" "${pkgdir}/usr/share/applications/cisco-pt.desktop" "${pkgdir}/usr/share/applications/cisco-ptsa.desktop"
+
+	install -D -m755 "${srcdir}/packettracer.sh" "${pkgdir}/etc/profile.d/packettracer.sh"
+
+	install -D -m644 "${pkgdir}/opt/packettracer/help/default/copyrights.htm" "${pkgdir}/usr/share/licenses/${pkgname}/COPYRIGHT"
+
+}
