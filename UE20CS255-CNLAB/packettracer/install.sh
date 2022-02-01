@@ -6,8 +6,7 @@ read option
 
 if [ $option -ne "1" ];then
     sudo pacman -S wget
-    wget "https://downloads.sourceforge.net/project/packettracr/CiscoPacketTracer_810_Ubuntu_64bit.deb?ts=gAAAAABh77m3GHnlK3EL5pN7AQqChelZUKAWjB1OMqx36dJdqmU0pn4bWv9ti0slhf_Uvfg2lHsk-Fk2eZtlcn3cqPSqETAvCQ%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fpackettracr%2Ffiles%2FCiscoPacketTracer_810_Ubuntu_64bit.deb%2Fdownload"
-    mv ./CiscoPacketTracer_810_Ubuntu_64bit.deb\?ts=gAAAAABh77m3GHnlK3EL5pN7AQqChelZUKAWjB1OMqx36dJdqmU0pn4bWv9ti0slhf_Uvfg2lHsk-Fk2eZtlcn3cqPSqETAvCQ==\&r=https:\%2F\%2Fsourceforge.net\%2Fprojects\%2Fpackettracr\%2Ffiles\%2FCiscoPacketTracer_810_Ubuntu CiscoPacketTracer_810_Ubuntu_64bit.deb    
+    wget -O CiscoPacketTracer_810_Ubuntu_64bit.deb "https://downloads.sourceforge.net/project/packettracr/CiscoPacketTracer_810_Ubuntu_64bit.deb?ts=gAAAAABh77m3GHnlK3EL5pN7AQqChelZUKAWjB1OMqx36dJdqmU0pn4bWv9ti0slhf_Uvfg2lHsk-Fk2eZtlcn3cqPSqETAvCQ%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fpackettracr%2Ffiles%2FCiscoPacketTracer_810_Ubuntu_64bit.deb%2Fdownload"
     makepkg -si
     if [ $? -ne "0" ];then
         echo "oh oh, something went wrong...may be wrong distro?"
@@ -20,8 +19,7 @@ else
         exit
     else
         sudo apt-get install wget
-        wget "https://downloads.sourceforge.net/project/packettracr/CiscoPacketTracer_810_Ubuntu_64bit.deb?ts=gAAAAABh77m3GHnlK3EL5pN7AQqChelZUKAWjB1OMqx36dJdqmU0pn4bWv9ti0slhf_Uvfg2lHsk-Fk2eZtlcn3cqPSqETAvCQ%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fpackettracr%2Ffiles%2FCiscoPacketTracer_810_Ubuntu_64bit.deb%2Fdownload"
-         mv ./CiscoPacketTracer_810_Ubuntu_64bit.deb\?ts=gAAAAABh77m3GHnlK3EL5pN7AQqChelZUKAWjB1OMqx36dJdqmU0pn4bWv9ti0slhf_Uvfg2lHsk-Fk2eZtlcn3cqPSqETAvCQ==\&r=https:\%2F\%2Fsourceforge.net\%2Fprojects\%2Fpackettracr\%2Ffiles\%2FCiscoPacketTracer_810_Ubuntu CiscoPacketTracer_810_Ubuntu_64bit.deb
+        wget -O CiscoPacketTracer_810_Ubuntu_64bit.deb "https://downloads.sourceforge.net/project/packettracr/CiscoPacketTracer_810_Ubuntu_64bit.deb?ts=gAAAAABh77m3GHnlK3EL5pN7AQqChelZUKAWjB1OMqx36dJdqmU0pn4bWv9ti0slhf_Uvfg2lHsk-Fk2eZtlcn3cqPSqETAvCQ%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fpackettracr%2Ffiles%2FCiscoPacketTracer_810_Ubuntu_64bit.deb%2Fdownload"
         sudo gdebi ./CiscoPacketTracer_810_Ubuntu_64bit.deb
         if [ $? -ne "0" ];then
             echo "damn those dependencies"
