@@ -24,11 +24,11 @@ void fetch_proc(proc_t **list, int n) {
     if (!present) {
       list[i] = (proc_t *)malloc(sizeof(proc_t));
       list[i]->id_ = c;
+      list[i]->copy_ = c;
       printf("\t Enter process arrival time : ");
       scanf("%d", &(list[i]->arrival_));
       printf("\t Enter process burst time : ");
       scanf("%d", &(list[i]->burst_));
-      list[i]->copy_ = list[i]->burst_;
     } else {
       i--; // to make sure there is not empty gaps in the array
     }
@@ -64,6 +64,10 @@ void exec_proc(proc_t **list, exec_t **exec_list, int n) {
       exec_list[smallest]->wait_ = exec_list[smallest]->end_ -
                                    list[smallest]->arrival_ -
                                    list[smallest]->copy_;
+      printf("%d %d %d \n", list[smallest]->copy_, exec_list[smallest]->wait_,
+             time);
+      fflush(stdout);
+      // why -2? one cus loop starts fron 0, other for finish time = 1+finish
       exec_list[smallest]->tat_ =
           exec_list[smallest]->end_ - list[smallest]->arrival_;
     }
