@@ -63,3 +63,9 @@ Gives control of CPU to the process selected by short-term scheduler. It does th
 
 All this process leads to a little latency, this is called Dispatch latency.
 
+
+A lot more Algorithms were discusses, Lab programs after that.
+
+
+- bust time : time of arrival to the time the CPU burst were given
+- turnaround time : time of arrival to time of completion
