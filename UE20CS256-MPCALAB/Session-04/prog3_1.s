@@ -1,4 +1,4 @@
-#find sum of all even posistion number in an array 
+
 .data
     ARR : .WORD 10,20,30,40,50,60,70,80,90,100
     RES : .WORD 

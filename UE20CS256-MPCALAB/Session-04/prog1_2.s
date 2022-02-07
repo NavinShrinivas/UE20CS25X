@@ -1,4 +1,4 @@
-;find GCD of two numbers
+
 
 .data
     dat : .WORD 36,60
@@ -7,7 +7,7 @@
     LDR r0,=dat
     LDR r3,=RES
     LDR r1,[r0]
-    LDR r2,[r0,#4] ;pre indexing without write back
+    LDR r2,[r0,#4] 
 L1:
     CMP r1,#0
     BEQ L2
