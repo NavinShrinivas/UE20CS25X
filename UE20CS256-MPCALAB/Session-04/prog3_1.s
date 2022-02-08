@@ -5,7 +5,7 @@
 .text 
     LDR r0,=ARR 
     LDR r1,=RES 
-    MOV r2,#0 #to sore result 
+    MOV r2,#0
     MOV r3,#1
 loop:
     MOV r8,#4 
