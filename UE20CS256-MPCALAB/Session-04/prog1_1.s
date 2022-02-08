@@ -19,7 +19,7 @@ L2:
     STR r2,[r3]
     B L6
 L3:
-    STR r2,[r3]
+    STR r1,[r3]
     B L6
 L4:
     STR r2[r3]
