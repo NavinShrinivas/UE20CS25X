@@ -1,6 +1,6 @@
 .data
-    ARR : .WORD 10,20,30,40,50,60,70,80,90,100
-    RES : .WORD 
+    ARR: .WORD 10,20,30,40,50,60,70,80,90,100
+    RES: .WORD 
 .text 
     LDR r0,=ARR 
     LDR r1,=RES 
