@@ -11,6 +11,10 @@
 
 ## Student programs : 
 
-- Add 2 matrices of order 3
-
-Two more programs 
+- Add 2 matrices of order 3, i.e implement c[i][j] = a[i][j]+b[i][j]
+  - Sum of two 3rd order matrix in row major is literally sum of the respective elements
+- Write an assembly code to find the norm of of a square matrix
+  - ![picture](./1.png) 
+  - second element of the col is 12 bytes away
+  - third is 24 bytes away, ofc these two are for 3 by 3 matrices only, ie n*4 bytes
+- Write a program to find the row sum of a matrix

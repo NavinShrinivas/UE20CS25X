@@ -22,6 +22,17 @@ then
        fi
         if [ $? -gt "0" ];then
             echo "Seems like you dont have mono installed"
+            echo "No worries, let's install it"
+            echo "1.Ubuntu based distros"
+            echo "2.Arch based distros"
+            echo -n "Enter option :"
+            read option2
+            if [ $option2 = "1" ];then
+                sudo apt-get install mono
+            else 
+                sudo pacman -S mono
+            fi
+            ./run.sh
         fi
  
 else
