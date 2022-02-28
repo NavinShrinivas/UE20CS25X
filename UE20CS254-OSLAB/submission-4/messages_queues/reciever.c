@@ -10,8 +10,9 @@ struct my_msgbuf {
 
 int main() {
   struct my_msgbuf msg;
-  int msgid = msgget((key_t)1200, 0777);
+  int msgid = msgget(ftok("haloo", 65), 0777);
   char output[1000];
-  msgrcv(msgid, &msg, sizeof(msg.mtext), 0, 0);
+  msgrcv(msgid, &msg, sizeof(msg), 1, 0);
+  // message rcv revices all the messages of type 1
   printf("%s", msg.mtext);
 }

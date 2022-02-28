@@ -10,12 +10,13 @@ struct my_msgbuf {
 };
 
 int main() {
-  int msgid = msgget((key_t)1200, 0777 | IPC_CREAT);
+  int msgid = msgget(ftok("haloo", 65), 0777);
+  // ftok gets us a unique ID for our message queues
+  // 0777 id the read write permissions for the queue
   struct my_msgbuf msg;
   printf("Enter text to append to queue : ");
   scanf("%[^\n]*c", msg.mtext);
-
-  printf("%d", msgid);
-  fflush(stdout);
-  msgsnd(msgid, &msg, sizeof(msg.mtext), 0);
+  msg.mtype = 1; // must, can be 0 or greater
+  msgsnd(msgid, &msg, sizeof(msg), 0);
+  // msgsend ofc sends the message :)
 }
