@@ -10,7 +10,7 @@ struct my_msgbuf {
 };
 
 int main() {
-  int msgid = msgget(ftok("haloo", 65), 0777);
+  int msgid = msgget(ftok("haloo", 65), 0777 | IPC_CREAT);
   // ftok gets us a unique ID for our message queues
   // 0777 id the read write permissions for the queue
   struct my_msgbuf msg;
