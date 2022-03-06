@@ -1,0 +1,111 @@
+<h1>MPCA Lab - Week 6</h1>
+<ul>
+<li>Name : P K Navin Shrinivas</li>
+<li>Section : D</li>
+<li>SRN : PES2UG20CS237</li>
+</ul>
+<h2>Student programs :</h2>
+<h3>Program 1: Sum of all digits in a number</h3>
+<p><strong>Code:</strong></p>
+<pre style="background-color:#2b303b;" lang="assembly"><code>
+<span style="color:#c0c5ce;">.data
+</span><span style="color:#c0c5ce;">    A: .WORD 2312
+</span><span style="color:#c0c5ce;">    MAGIC: .WORD 0xCCCCCCCD
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">.text
+</span><span style="color:#c0c5ce;">    mov r0,#0
+</span><span style="color:#c0c5ce;">    LDR r1,=A 
+</span><span style="color:#c0c5ce;">    LDR r2,[r1]
+</span><span style="color:#c0c5ce;">    ldr r4,=MAGIC
+</span><span style="color:#c0c5ce;">    LDR r5,[r4]
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">loop:
+</span><span style="color:#c0c5ce;">    CMP r2,#10
+</span><span style="color:#c0c5ce;">    BLT endseq
+</span><span style="color:#c0c5ce;">    MOV r3,r2
+</span><span style="color:#c0c5ce;">    B mod
+</span><span style="color:#c0c5ce;">mod:
+</span><span style="color:#c0c5ce;">    CMP r3,#10
+</span><span style="color:#c0c5ce;">    BLT found
+</span><span style="color:#c0c5ce;">    SUB r3,r3,#10
+</span><span style="color:#c0c5ce;">    B mod
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">found:
+</span><span style="color:#c0c5ce;">    ADD r0,r0,r3
+</span><span style="color:#c0c5ce;">    UMULL r6,r2,r2,r5
+</span><span style="color:#c0c5ce;">    MOV r2,r2,LSR #3
+</span><span style="color:#c0c5ce;">    B loop
+</span><span style="color:#c0c5ce;">endseq: 
+</span><span style="color:#c0c5ce;">    ADD r0,r0,r2
+</span><span style="color:#c0c5ce;">    .end
+</span>
+</code></pre>
+<p><strong>Screenshots:</strong></p>
+<p><img src="./stud1.png" alt="picture" /></p>
+<h3>Program 2: Find norm of a 3rd order matrix</h3>
+<p><strong>Code:</strong></p>
+<pre style="background-color:#2b303b;" lang="assembly"><code>
+<span style="color:#c0c5ce;">.data
+</span><span style="color:#c0c5ce;">    A: .WORD 10,20,30,40,50,60,70,80,90
+</span><span style="color:#c0c5ce;">    B: .WORD 0,0,0
+</span><span style="color:#c0c5ce;">    ANS: .WORD 0
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">.text
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">mov r9,#3
+</span><span style="color:#c0c5ce;">mov r8,#0
+</span><span style="color:#c0c5ce;">LDR r0,=A
+</span><span style="color:#c0c5ce;">LDR r4,=B
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">loop:
+</span><span style="color:#c0c5ce;">    LDR r1,[r0]
+</span><span style="color:#c0c5ce;">    LDR r2,[r0,#12]
+</span><span style="color:#c0c5ce;">    LDR r3,[r0,#24]
+</span><span style="color:#c0c5ce;">    ADD r0,r0,#4
+</span><span style="color:#c0c5ce;">    ADD r8,r8,#1
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    ADD r1,r1,r2
+</span><span style="color:#c0c5ce;">    ADD r1,r1,r3
+</span><span style="color:#c0c5ce;">    STR r1,[r4],#4
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    CMP r8,r9
+</span><span style="color:#c0c5ce;">    BEQ end 
+</span><span style="color:#c0c5ce;">    B loop 
+</span><span style="color:#c0c5ce;">end:
+</span><span style="color:#c0c5ce;">    CMP r1,r2
+</span><span style="color:#c0c5ce;">    BGT R1
+</span><span style="color:#c0c5ce;">    .end
+</span>
+</code></pre>
+<p><strong>Screenshots:</strong></p>
+<p><img src="./stud2.png" alt="picture" /></p>
+<h3>Program 3: Find sum of rows of a 3rd order matrix</h3>
+<p><strong>Code:</strong></p>
+<pre style="background-color:#2b303b;" lang="assembly"><code>
+<span style="color:#c0c5ce;">.data
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">    A: .WORD 10,20,30,40,50,60,70,80,90
+</span><span style="color:#c0c5ce;">    ANS: .WORD 0,0,0
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">.text
+</span><span style="color:#c0c5ce;">    LDR r0,=A
+</span><span style="color:#c0c5ce;">    LDR r4,=ANS
+</span><span style="color:#c0c5ce;">    MOV r9,#3
+</span><span style="color:#c0c5ce;">    MOV r8,#0 
+</span><span style="color:#c0c5ce;">loop:
+</span><span style="color:#c0c5ce;">    LDMIA r0!,{r1-r3}    
+</span><span style="color:#c0c5ce;">    ADD r1,r1,r2
+</span><span style="color:#c0c5ce;">    ADD r1,r1,r3
+</span><span style="color:#c0c5ce;">    STR r1,[r4],#4
+</span><span style="color:#c0c5ce;">    ADD r8,r8,#1
+</span><span style="color:#c0c5ce;">    CMP r8,r9 
+</span><span style="color:#c0c5ce;">    BEQ end 
+</span><span style="color:#c0c5ce;">    B loop 
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">end: .end 
+</span>
+</code></pre>
+<p><strong>Screenshots:</strong></p>
+<p><img src="./stud3.png" alt="picture" /></p>
