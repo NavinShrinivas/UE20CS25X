@@ -1,9 +1,9 @@
 .data
     ARR: .WORD 2,4,7,9,10,14,15
-    KEY: .WORD 15
+    KEY: .WORD 14
     SIZE: .WORD 7
-    OUtPUT1: .ASCIZ "Search Sucessfull"
-    OUTPUT2: .ASCIZ "Search Unsucessfull"
+    OUTPUT1: .ASCIZ "Successful Search"
+    OUTPUT2: .ASCIZ "Unsuccessful Search"
 .text
 
 LDR r11,=SIZE
@@ -14,10 +14,14 @@ LDR r11,=KEY
 LDR r3,[r11]
 
 initloop:
-    CMP r1,r2
+    SUB r6,r2,r1 
+    CMP r6,#4
     BEQ failed
     SUB r4,r2,r1
+    MOV r4,r4,LSR #2
     MOV r4,r4,LSR #1
+    MOV r4,r4,LSL #2
+    ADD r4,r4,r1
     LDR r5,[r4]
     CMP r5,r3
     BEQ found
@@ -25,13 +29,23 @@ initloop:
     B golesser
 
 gogreater:
-    MOV r1,r5
+    MOV r1,r4
     B initloop
 golesser:
-    MOV r2,r5
+    MOV r2,r4
     B initloop
 found:
-    B end
+    ldr r1,=OUTPUT1 
+    B LOOP
 failed:
-    B end
+    ldr r1,=OUTPUT2
+    B LOOP
+
+LOOP:
+    LDRB R0,[R1],#1 
+    CMP R0,#0 
+    SWINE 0x00 
+    BNE LOOP 
+    SWI 0x11      
+
 end: .end
