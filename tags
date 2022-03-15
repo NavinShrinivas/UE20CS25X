@@ -122,7 +122,7 @@ MPCA Assignment	UE20CS256-MPCALAB/Assignment/readme.md	/^# MPCA Assignment $/;"	
 MPCA Lab - Week 5	UE20CS256-MPCALAB/Session-05/PES2UG20CS237_P K Navin Shrinivas.md	/^# MPCA Lab - Week 5 $/;"	c
 MPCA Lab - Week 6	UE20CS256-MPCALAB/Session-06/PES2UG20CS237_P K Navin Shrinivas.md	/^# MPCA Lab - Week 6$/;"	c
 MPCA Lab - Week 6	UE20CS256-MPCALAB/Session-06/renders.html	/^<h1>MPCA Lab - Week 6<\/h1>$/;"	h
-MPCA Lab - Week 7	UE20CS256-MPCALAB/Session-07/PES2UG20CS237_P K Navin Shrinivas_WEEK 6.md	/^# MPCA Lab - Week 7$/;"	c
+MPCA Lab - Week 7	UE20CS256-MPCALAB/Session-07/PES2UG20CS237_P K Navin Shrinivas_WEEK 7.md	/^# MPCA Lab - Week 7$/;"	c
 Non-Preemptive Scheduling	UE20CS254-OSLAB/submission-3/readme.md	/^### Non-Preemptive Scheduling $/;"	S	section:Process Scheduling""Algorithms
 OS Lab Week -1	UE20CS254-OSLAB/submission-1/submission-1.md	/^# OS Lab Week -1 $/;"	c
 OS Lab Week-2	UE20CS254-OSLAB/submission-2/submission-2.md	/^# OS Lab Week-2 $/;"	c
@@ -138,7 +138,7 @@ Program 1	UE20CS256-MPCALAB/Assignment/readme.md	/^## Program 1 $/;"	s	chapter:M
 Program 1 : Message Queues	UE20CS254-OSLAB/submission-4/PES2UG20CS237_P K Navin Shrinivas_WEEK 4.md	/^## Program 1 : Message Queues$/;"	s	chapter:OS lab submission-4
 Program 1 : fork(), pid(), ppid()	UE20CS254-OSLAB/submission-2/submission-2.md	/^## Program 1 : fork(), pid(), ppid()$/;"	s	chapter:OS Lab Week-2
 Program 1: Add 2 matrices of order 3, i.e implement c[i][j] = a[i][j]+b[i][j]	UE20CS256-MPCALAB/Session-05/PES2UG20CS237_P K Navin Shrinivas.md	/^###  Program 1: Add 2 matrices of order 3, i.e implement c[i][j] = a[i][j]+b[i][j] $/;"	S	section:MPCA Lab - Week 5""Student programs :
-Program 1: Display all HEX codes from 0-9 | A-F	UE20CS256-MPCALAB/Session-07/PES2UG20CS237_P K Navin Shrinivas_WEEK 6.md	/^###  Program 1: Display all HEX codes from 0-9 | A-F $/;"	S	section:MPCA Lab - Week 7""Student programs :
+Program 1: Display all HEX codes from 0-9 | A-F	UE20CS256-MPCALAB/Session-07/PES2UG20CS237_P K Navin Shrinivas_WEEK 7.md	/^###  Program 1: Display all HEX codes from 0-9 | A-F $/;"	S	section:MPCA Lab - Week 7""Student programs :
 Program 1: Sum of all digits in a number	UE20CS256-MPCALAB/Session-06/PES2UG20CS237_P K Navin Shrinivas.md	/^###  Program 1: Sum of all digits in a number $/;"	S	section:MPCA Lab - Week 6""Student programs :
 Program 1: Sum of all digits in a number	UE20CS256-MPCALAB/Session-06/renders.html	/^<h3>Program 1: Sum of all digits in a number<\/h3>$/;"	j
 Program 1A : move block of data from one memory to another memory location	UE20CS256-MPCALAB/Session-03/PES2UG20CS237_WEEK3_Sec D.md	/^## Program 1A : move block of data from one memory to another memory location$/;"	s	chapter:Week-3 MPCA Lab
@@ -146,7 +146,7 @@ Program 1a :	UE20CS254-OSLAB/submission-2/submission-2.md	/^## Program 1a : $/;"
 Program 2 : FIFO-named pipes	UE20CS254-OSLAB/submission-4/PES2UG20CS237_P K Navin Shrinivas_WEEK 4.md	/^## Program 2 : FIFO-named pipes$/;"	s	chapter:OS lab submission-4
 Program 2 : Write a program to find sun of N data items in the memory	UE20CS256-MPCALAB/Session-03/PES2UG20CS237_WEEK3_Sec D.md	/^## Program 2 : Write a program to find sun of N data items in the memory$/;"	s	chapter:Week-3 MPCA Lab
 Program 2 : wait(NULL)	UE20CS254-OSLAB/submission-2/submission-2.md	/^## Program 2 : wait(NULL)$/;"	s	chapter:OS Lab Week-2
-Program 2: Display a text in LCD moving from right to left	UE20CS256-MPCALAB/Session-07/PES2UG20CS237_P K Navin Shrinivas_WEEK 6.md	/^###  Program 2: Display a text in LCD moving from right to left$/;"	S	section:MPCA Lab - Week 7""Student programs :
+Program 2: Display a text in LCD moving from right to left	UE20CS256-MPCALAB/Session-07/PES2UG20CS237_P K Navin Shrinivas_WEEK 7.md	/^###  Program 2: Display a text in LCD moving from right to left$/;"	S	section:MPCA Lab - Week 7""Student programs :
 Program 2: Find	UE20CS256-MPCALAB/Session-06/PES2UG20CS237_P K Navin Shrinivas.md	/^###  Program 2: Find # of occurrence of an alphabet in a given string$/;"	S	section:MPCA Lab - Week 6""Student programs :
 Program 2: Find norm of a 3rd order matrix	UE20CS256-MPCALAB/Session-05/PES2UG20CS237_P K Navin Shrinivas.md	/^###  Program 2: Find norm of a 3rd order matrix$/;"	S	section:MPCA Lab - Week 5""Student programs :
 Program 2: Find norm of a 3rd order matrix	UE20CS256-MPCALAB/Session-06/renders.html	/^<h3>Program 2: Find norm of a 3rd order matrix<\/h3>$/;"	j
@@ -184,7 +184,7 @@ Student programs :	UE20CS256-MPCALAB/Session-05/PES2UG20CS237_P K Navin Shriniva
 Student programs :	UE20CS256-MPCALAB/Session-05/readme.md	/^## Student programs : $/;"	s	chapter:Session-5 MPCA LAB :
 Student programs :	UE20CS256-MPCALAB/Session-06/PES2UG20CS237_P K Navin Shrinivas.md	/^## Student programs : $/;"	s	chapter:MPCA Lab - Week 6
 Student programs :	UE20CS256-MPCALAB/Session-06/renders.html	/^<h2>Student programs :<\/h2>$/;"	i
-Student programs :	UE20CS256-MPCALAB/Session-07/PES2UG20CS237_P K Navin Shrinivas_WEEK 6.md	/^## Student programs : $/;"	s	chapter:MPCA Lab - Week 7
+Student programs :	UE20CS256-MPCALAB/Session-07/PES2UG20CS237_P K Navin Shrinivas_WEEK 7.md	/^## Student programs : $/;"	s	chapter:MPCA Lab - Week 7
 Task-1 : Create a Linux system	UE20CS254-OSLAB/submission-1/submission-1.md	/^## Task-1 : Create a Linux system $/;"	s	chapter:OS Lab Week -1
 Task-2 : Installing C compiler	UE20CS254-OSLAB/submission-1/submission-1.md	/^## Task-2 : Installing C compiler$/;"	s	chapter:OS Lab Week -1
 Task-3 : creation of sample program	UE20CS254-OSLAB/submission-1/submission-1.md	/^## Task-3 : creation of sample program$/;"	s	chapter:OS Lab Week -1
@@ -195,7 +195,6 @@ Week-3 MPCA Lab	UE20CS256-MPCALAB/Session-03/PES2UG20CS237_WEEK3_Sec D.md	/^# We
 Why the mess in naming?	UE20CS255-CNLAB/readme.md	/^# CN Lab folder $/;"	s	chapter:CN Lab folder
 add	UE20CS256-MPCALAB/Session-01/prog2.s	/^add r2,r0,r1$/;"	l
 add	UE20CS256-MPCALAB/Session-02/prog1.s	/^add r3,r0,r1$/;"	l
-address	UE20CS255-CNLAB/week-5/src/tcp_server.py	/^    connection_sock , address = sock.accept()$/;"	v
 ands	UE20CS256-MPCALAB/Session-02/prog4.s	/^ands r2,r1,#1$/;"	l
 arrival_	UE20CS254-OSLAB/submission-3/RR.c	/^  int arrival_;$/;"	m	struct:proc	typeref:typename:int	file:
 arrival_	UE20CS254-OSLAB/submission-3/SJF/SJF_Preemptive.h	/^  int arrival_;$/;"	m	struct:proc	typeref:typename:int
@@ -205,7 +204,6 @@ burst_	UE20CS254-OSLAB/submission-3/RR.c	/^  int burst_;$/;"	m	struct:proc	typer
 burst_	UE20CS254-OSLAB/submission-3/SJF/SJF_Preemptive.h	/^  int burst_;$/;"	m	struct:proc	typeref:typename:int
 char	UE20CS256-MPCALAB/Session-06/stud2.s	/^    char: .ASCIZ "a"$/;"	l
 cmp	UE20CS256-MPCALAB/Session-03/prog1.s	/^cmp r0,#0$/;"	l
-connection_sock	UE20CS255-CNLAB/week-5/src/tcp_server.py	/^    connection_sock , address = sock.accept()$/;"	v
 copy_	UE20CS254-OSLAB/submission-3/RR.c	/^  int copy_;$/;"	m	struct:proc	typeref:typename:int	file:
 copy_	UE20CS254-OSLAB/submission-3/SJF/SJF_Preemptive.h	/^  int copy_;$/;"	m	struct:proc	typeref:typename:int
 delay	UE20CS256-MPCALAB/Session-07/prog2.s	/^    delay: .WORD 15000$/;"	l
@@ -280,8 +278,6 @@ mov	UE20CS256-MPCALAB/Session-03/prog1.s	/^mov r0,#-2$/;"	l
 mov	UE20CS256-MPCALAB/Session-03/prog1.s	/^mov r1,#2$/;"	l
 mov	UE20CS256-MPCALAB/Session-05/stud_prog2.s	/^mov r8,#0$/;"	l
 mov	UE20CS256-MPCALAB/Session-05/stud_prog2.s	/^mov r9,#3$/;"	l
-msg	UE20CS255-CNLAB/week-5/src/tcp_server.py	/^    msg = connection_sock.recv(1024)$/;"	v
-msg	UE20CS255-CNLAB/week-5/src/tcp_server.py	/^    msg = msg.upper()$/;"	v
 mtext	UE20CS254-OSLAB/submission-4/messages_queues/reciever.c	/^  char mtext[200];$/;"	m	struct:my_msgbuf	typeref:typename:char[200]	file:
 mtext	UE20CS254-OSLAB/submission-4/messages_queues/sender.c	/^  char mtext[200];$/;"	m	struct:my_msgbuf	typeref:typename:char[200]	file:
 mtype	UE20CS254-OSLAB/submission-4/messages_queues/reciever.c	/^  long mtype;$/;"	m	struct:my_msgbuf	typeref:typename:long	file:
@@ -299,11 +295,8 @@ proc	UE20CS254-OSLAB/submission-3/RR.c	/^struct proc {$/;"	s	file:
 proc	UE20CS254-OSLAB/submission-3/SJF/SJF_Preemptive.h	/^struct proc {$/;"	s
 proc_t	UE20CS254-OSLAB/submission-3/RR.c	/^typedef struct proc proc_t;$/;"	t	typeref:struct:proc	file:
 proc_t	UE20CS254-OSLAB/submission-3/SJF/SJF_Preemptive.h	/^typedef struct proc proc_t;$/;"	t	typeref:struct:proc
-server_ip	UE20CS255-CNLAB/week-5/src/tcp_server.py	/^server_ip = "127.0.0.1"$/;"	v
-server_port	UE20CS255-CNLAB/week-5/src/tcp_server.py	/^server_port = 2000$/;"	v
 seven	UE20CS256-MPCALAB/Session-07/prog1.s	/^    seven: .byte  0b01110000$/;"	l
 six	UE20CS256-MPCALAB/Session-07/prog1.s	/^    six:  .byte  0b10101111$/;"	l
-sock	UE20CS255-CNLAB/week-5/src/tcp_server.py	/^sock = socket(AF_INET,SOCK_STREAM)$/;"	v
 src	UE20CS256-MPCALAB/Session-05/prog4.s	/^    src: .WORD 11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,1111,11,11,11,11,11,11,11,11,11,11,1/;"	l
 string	UE20CS256-MPCALAB/Session-06/stud2.s	/^    string: .ASCIZ "this program is for lab 6 MPCA"$/;"	l
 sub	UE20CS256-MPCALAB/Session-01/prog2.s	/^sub r3,r0,r1$/;"	l

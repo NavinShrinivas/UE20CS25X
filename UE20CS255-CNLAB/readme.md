@@ -21,4 +21,6 @@ way i like the order from previous sem...so that's what I'll be using.
   - 4 : Authentication 
   - 5 : Cookies using PHP scripts : https://gist.github.com/superjojo140/18e250786d977b27571124f81bba5018
 - Week-4 : Week-5 submission
-- Week-5 : Week-6 submission 
+- Week-5 real : Alloted 6 hours for CN lab assignment/Project 
+- Week-6 real : assignment/Project
+- Week-7 real : assignment/Project
