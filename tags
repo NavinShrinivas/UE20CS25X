@@ -226,7 +226,7 @@ five	UE20CS256-MPCALAB/Session-07/prog1.s	/^    five:  .byte  0b10101011$/;"	l
 found	UE20CS256-MPCALAB/Assignment/ans1.s	/^found:$/;"	l
 found	UE20CS256-MPCALAB/Assignment/ans2.s	/^found:$/;"	l
 found	UE20CS256-MPCALAB/Session-06/stud1.s	/^found:$/;"	l
-four	UE20CS256-MPCALAB/Session-07/prog1.s	/^    four:  .byte  0b00110011----01110011$/;"	l
+four	UE20CS256-MPCALAB/Session-07/prog1.s	/^    four:  .byte  0b00110011$/;"	l
 gogreater	UE20CS256-MPCALAB/Assignment/ans1.s	/^gogreater:$/;"	l
 golesser	UE20CS256-MPCALAB/Assignment/ans1.s	/^golesser:$/;"	l
 id_	UE20CS254-OSLAB/submission-3/RR.c	/^  int id_;$/;"	m	struct:proc	typeref:typename:int	file:

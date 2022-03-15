@@ -11,7 +11,7 @@
     one:  .byte  0b01100000
     two:  .byte  0b01101110
     three:  .byte  0b11111010
-    four:  .byte  0b00110011----01110011
+    four:  .byte  0b00110011
     five:  .byte  0b10101011
     six:  .byte  0b10101111
     seven: .byte  0b01110000
