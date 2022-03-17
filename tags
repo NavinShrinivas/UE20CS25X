@@ -119,6 +119,7 @@ MOV	UE20CS256-MPCALAB/Session-06/prog1.s	/^MOV r8,#0$/;"	l
 MOV	UE20CS256-MPCALAB/Session-06/prog1.s	/^MOV r9,#3$/;"	l
 MOV	UE20CS256-MPCALAB/Session-06/stud2.s	/^MOV r5,#0$/;"	l
 MPCA Assignment	UE20CS256-MPCALAB/Assignment/readme.md	/^# MPCA Assignment $/;"	c
+MPCA Assignment : Unit-2	UE20CS256-MPCALAB/Assignment/PES2UG20CS237_MPCA ASSIGNMENT-1.md	/^# MPCA Assignment : Unit-2$/;"	c
 MPCA Lab - Week 5	UE20CS256-MPCALAB/Session-05/PES2UG20CS237_P K Navin Shrinivas.md	/^# MPCA Lab - Week 5 $/;"	c
 MPCA Lab - Week 6	UE20CS256-MPCALAB/Session-06/PES2UG20CS237_P K Navin Shrinivas.md	/^# MPCA Lab - Week 6$/;"	c
 MPCA Lab - Week 6	UE20CS256-MPCALAB/Session-06/renders.html	/^<h1>MPCA Lab - Week 6<\/h1>$/;"	h
@@ -156,6 +157,8 @@ Program 3: Find sum of rows of a 3rd order matrix	UE20CS256-MPCALAB/Session-05/P
 Program 3: Find sum of rows of a 3rd order matrix	UE20CS256-MPCALAB/Session-06/renders.html	/^<h3>Program 3: Find sum of rows of a 3rd order matrix<\/h3>$/;"	j
 Program 4 : execl() execv()	UE20CS254-OSLAB/submission-2/submission-2.md	/^## Program 4 : execl() execv() $/;"	s	chapter:OS Lab Week-2
 Program 5 : Convert the following C code to ARM7TDMI asm	UE20CS256-MPCALAB/Session-03/PES2UG20CS237_WEEK3_Sec D.md	/^## Program 5 : Convert the following C code to ARM7TDMI asm$/;"	s	chapter:Week-3 MPCA Lab
+Question 1: Binary Search in ARM7RDMI Assembly	UE20CS256-MPCALAB/Assignment/PES2UG20CS237_MPCA ASSIGNMENT-1.md	/^##  Question 1: Binary Search in ARM7RDMI Assembly $/;"	s	chapter:MPCA Assignment : Unit-2
+Question 2 : Search for a substring in a string using ARM7TDMI	UE20CS256-MPCALAB/Assignment/PES2UG20CS237_MPCA ASSIGNMENT-1.md	/^##  Question 2 : Search for a substring in a string using ARM7TDMI$/;"	s	chapter:MPCA Assignment : Unit-2
 Question-1 : Official definition of a Tech Startup	CIE-Assignments/Assignment-1.md	/^## Question-1 : Official definition of a Tech Startup $/;"	s	chapter:CIE Assignment-1
 Question-2 : Top 5 Industry sector that Indian Startups are focused on? Give one examples in each of the 5 industry sector/markets	CIE-Assignments/Assignment-1.md	/^## Question-2 : Top 5 Industry sector that Indian Startups are focused on? Give one examples in /;"	s	chapter:CIE Assignment-1
 Question-3 : Deep-tech industries	CIE-Assignments/Assignment-1.md	/^## Question-3 : Deep-tech industries $/;"	s	chapter:CIE Assignment-1
