@@ -7,9 +7,9 @@
 int main(int argc, char *argv[]){
     char *x = argv[0];
     char *y = argv[1];
-    /*printf("%c %c",*x,*y);*/
     int sum = atoi(x)+atoi(y);
-    printf("%d",sum);
+    printf("From another process!! \n");
+    printf("Sum of two number : %d ",sum);
 
     return 0;
 }
