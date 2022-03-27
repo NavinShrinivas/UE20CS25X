@@ -7,3 +7,7 @@
   - Are the displayed values in sorted order?
   - If not why?
 - Write a program which accepts two integers X and Y use exec to execute another user defined program that prints the sum of X and Y
+
+## Assignment-6 
+
+- Mutex locks in pthreads
