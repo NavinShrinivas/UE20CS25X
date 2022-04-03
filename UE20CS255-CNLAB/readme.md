@@ -24,3 +24,4 @@ way i like the order from previous sem...so that's what I'll be using.
 - Week-5 real : Alloted 6 hours for CN lab assignment/Project 
 - Week-6 real : assignment/Project
 - Week-7 real : assignment/Project
+- Week-5 : Ive given up trying to follow last years naming scheme. anyhow, this the week with analysing UDP and TCP packets in wireshark.
