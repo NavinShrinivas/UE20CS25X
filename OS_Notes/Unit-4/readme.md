@@ -233,3 +233,19 @@ Extent allocation only slightly alters the interpretation of addressed blocks fr
   - Pointer overhead is too much
   - say for a tiny file of 2kb, a entire blocks [With internal frag] is a huge waste of space.
   - For files that are tooo huge, single index table block wont be enuf
+  - So some time other ways of allocating storage is used, but often mutiple layers of index table are implemented, like this : 
+  - ![multi level index](./4.png)
+
+### Comparing allocation methods : 
+- Contiguous : best for sequential and random, but frag 
+- linked list : best for linear access
+- Index : more complex 
+  - Can need many index layers 
+
+### Free space 
+- We keep track of all free blocks for faster allocation and reusing of free space from deleted blocks.
+- The free space list is implmented as as a bit map of a bit vector
+  - Each block is rep. by 1 bit, index starts from 0, free blocks are rep. by 1.
+  - Only way to find a free block is for searching sequentially for , the blocks address can later be calculated : # bites/word * # of 0 words + 1
+  - Its only practical to store bit maps of small disks
+
