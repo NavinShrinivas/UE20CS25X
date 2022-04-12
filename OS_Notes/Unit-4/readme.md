@@ -142,10 +142,15 @@ A FS must first be mounted before it can be used, the place of mounting is calle
 
 ### HAHAHAH, the same old permission :)
 bits : Read write execute
+
         1     1     1      => 7
+
         1     1     0      => 6
+
         ...
+
 Groups : Owner Group Others 
+
           7       7     7   => Not a great idea for security.
 
 ### Propertise of a file : 
