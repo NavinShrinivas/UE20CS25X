@@ -205,4 +205,26 @@ Example, Linux has 4 objects :
 - dentry 
 
 ### Allocation 
-- Contigus allocation : OFten time has the best performance, and very simple to implement as we need to track only endins and starting addresses.
+- Contiguos allocation : OFten time has the best performance, and very simple to implement as we need to track only endins and starting addresses.
+  - Ofc we have the fragmentation problem and needs conpaction
+- Extent based systems : modified Contiguos alloc
+ ```
+An extent is defined as one or more adjacent blocks of data within the file system. An extent is presented as an address-length pair, which identifies the starting block address and the length of the extent (in file system or logical blocks). VxFS allocates storage in groups of extents rather than a block at a time.
+Extents allow disk I/O to take place in units of multiple blocks if storage is allocated in consecutive blocks. For sequential I/O, multiple block operations are considerably faster than block-at-a-time operations; almost all disk drives accept I/O operations of multiple blocks.
+Extent allocation only slightly alters the interpretation of addressed blocks from the inode structure compared to block based inodes. A VxFS inode references 10 direct extents, each of which are pairs of starting block addresses and lengths in blocks.
+```
+- Link list of blocks : each file is list of blocks. 
+  - No external frag 
+  - Relisbailty can be a problem
+  - Loot of seeking
+  - Linked 
+- FAT is an implmentation of linked alloct, ofc with modifications
+  - Beginning of volume has a table, index by block numbers.
+  - cacheable and faster that linked allocation
+  - Unused blocks are represented using "0"
+- Index alloc : Each file has its own index table, a table of pointers to its won blocks, as seen before can be in multiple layers.
+  - Gives direct access to files and its blocks 
+  - No external frag! 
+  - Pointer overhead is too much
+  - say for a tiny file of 2kb, a entire blocks [With internal frag] is a huge waste of space.
+  - For files that are tooo huge, single index table block wont be enuf
