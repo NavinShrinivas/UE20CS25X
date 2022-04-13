@@ -16,3 +16,6 @@
 ## Assignment-2 
 - Parent reads a "input.txt" and passes it to a pipe, child reads the pip and return wc 
 - Combing two string given by parent and combined by child, parent prints it out.
+
+## lab-8???? 
+- FIFO page replacement
