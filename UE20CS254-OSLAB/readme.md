@@ -19,3 +19,14 @@
 
 ## lab-8???? 
 - FIFO page replacement
+
+## Assignment-3 
+- Question 2 : 
+  - Simulate paging 
+    - size of physical mem
+    - size of logical mem
+    - partition size 
+    - logical address 
+    - Base address 
+    - For a given logical address calculate physical address using : physical add = base addr + (frame nmumber* frame size)+offset 
+  - Implement optimal paging algorithm
