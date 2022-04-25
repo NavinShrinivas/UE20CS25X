@@ -30,3 +30,7 @@
     - Base address 
     - For a given logical address calculate physical address using : physical add = base addr + (frame nmumber* frame size)+offset 
   - Implement optimal paging algorithm
+
+
+
+Decrypting my project :   gpgtar --decrypt --directory decrypted_output_folder encrypted_folder.gpg
