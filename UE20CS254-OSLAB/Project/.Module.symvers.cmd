@@ -1,0 +1,1 @@
+cmd_/home/navin/github/UE20CS25X-HandsOn/UE20CS254-OSLAB/decrypted/Project/Module.symvers := sed 's/\.ko$$/\.o/' /home/navin/github/UE20CS25X-HandsOn/UE20CS254-OSLAB/decrypted/Project/modules.order | scripts/mod/modpost  -a  -o /home/navin/github/UE20CS25X-HandsOn/UE20CS254-OSLAB/decrypted/Project/Module.symvers -e -i Module.symvers  -N -T -
