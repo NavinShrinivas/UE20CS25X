@@ -3,15 +3,16 @@
 #include <linux/sched.h> //For the task_struct structure
 #include <linux/sched/signal.h> //For the "for_each_proc" macro 
 
-
+//Details returned during modinfo module_name.ko
 MODULE_AUTHOR("P K Navin Shrinivas");
 MODULE_DESCRIPTION("Task: Starting from init proc, list all proc's");
 MODULE_LICENSE("GPL");
 
 
 static int __init listerstart(void) { //name can be anything
-    //task struct :https://elixir.bootlin.com/linux/latest/source/include/linux/sched.h#L728
+    //task struct : https://elixir.bootlin.com/linux/latest/source/include/linux/sched.h#L728
     //for_each_process marco : https://elixir.bootlin.com/linux/latest/source/include/linux/sched/signal.h#L629
+    ////insmod start executing from this function
     struct task_struct* proc;
 
     for_each_process(proc){
@@ -36,6 +37,7 @@ static int __init listerstart(void) { //name can be anything
 
 static void __exit listerend(void)
 {     
+    //Executed during rmmod
     printk(KERN_INFO "Module Clean up,from Lister module \n"); 
 }
 module_init(listerstart);

@@ -25,5 +25,6 @@ int main (int argc, char **argv)
         stat(temp,&attrib);
         struct tm* time_struct = gmtime(&attrib.st_mtime);
         printf("%s %d %d %d \n",temp,time_struct->tm_mday,time_struct->tm_mon+1,time_struct->tm_year+1900);
+        if(time_struct->tm_mday>=)
     }
 }
