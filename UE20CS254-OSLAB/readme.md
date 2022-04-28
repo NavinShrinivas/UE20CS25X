@@ -34,3 +34,6 @@
 
 
 Decrypting my project :   gpgtar --decrypt --directory decrypted_output_folder encrypted_folder.gpg
+
+## Assignment-4 
+- Write a C program to list all files that have been modified after a certain date inputs to the program: directory and date
