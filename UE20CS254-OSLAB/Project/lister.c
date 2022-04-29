@@ -18,6 +18,8 @@ static int __init listerstart(void) { //name can be anything
     for_each_process(proc){
         printk("Process name : %s \n",proc->comm);
         printk("\t|\n");
+        printk("\t|__Parent Process pid : %d \n",proc->parent->pid);
+        printk("\t|__Parent Process name : %s \n",proc->parent->comm);
         printk("\t|__Process pid : %d \n",proc->pid);
         int state = proc->__state;
         char state_in_words[100];

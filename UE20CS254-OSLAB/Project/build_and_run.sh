@@ -20,4 +20,4 @@ echo "Building Kernel module"
 make all 
 sudo rmmod lister
 sudo insmod *.ko 
-sudo dmesg | grep Process
+sudo dmesg

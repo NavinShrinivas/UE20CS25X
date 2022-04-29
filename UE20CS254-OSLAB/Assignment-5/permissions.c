@@ -30,7 +30,11 @@ int main (int argc, char **argv)
             /*printf("%s %d %d %d \n",temp,time_struct->tm_mday,time_struct->tm_mon+1,time_struct->tm_year+1900);*/
         if(time_struct->tm_year + 1900 >= yer && time_struct->tm_mday >= day && time_struct->tm_mon+1 >= mon){
 
-            printf("%s %d %d %d \n",temp,time_struct->tm_mday,time_struct->tm_mon+1,time_struct->tm_year+1900);
+            printf("%s %d %d %d  previous size : %d\n",temp,time_struct->tm_mday,time_struct->tm_mon+1,time_struct->tm_year+1900,(int)attrib.st_size);
+            truncate(temp,(int)attrib.st_size/2);
+            struct stat attrib1;
+            stat(temp,&attrib1);
+            printf("mod size : %d\n",(int)attrib1.st_size);
         }
     }
 }
