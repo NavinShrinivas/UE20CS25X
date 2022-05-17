@@ -8,19 +8,14 @@
   - If not why?
 - Write a program which accepts two integers X and Y use exec to execute another user defined program that prints the sum of X and Y
 
-## Assignment-6 
-
-- Mutex locks in pthreads
-
-
 ## Assignment-2 
 - Parent reads a "input.txt" and passes it to a pipe, child reads the pip and return wc 
 - Combing two string given by parent and combined by child, parent prints it out.
 
-## lab-8???? 
+## Assignment-3
 - FIFO page replacement
 
-## Assignment-3 
+## Assignment-4
 - Question 2 : 
   - Simulate paging 
     - size of physical mem
@@ -32,8 +27,5 @@
   - Implement optimal paging algorithm
 
 
-
-Decrypting my project :   gpgtar --decrypt --directory decrypted_output_folder encrypted_folder.gpg
-
-## Assignment-4 
+## Assignment-5
 - Write a C program to list all files that have been modified after a certain date inputs to the program: directory and date
