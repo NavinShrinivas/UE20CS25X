@@ -164,6 +164,7 @@ page table is kept in mem :
 - PTLR : page table length register
 
 But that does also mean for each address fetching we need 2 mem access. This is where TLB's come in. TLB's store ASID address space identifiers, on a miss TLB will get the value to cache for faster access, but replacment strategies have to be considered for this. To sum it up in a diagram : 
+- If the TLB doesn’t use ASID then the entire cache much be flushed on context switch.
 ![TLB's](./7.png)
 
 Just as in segment table, paging also can to read write prottecc
