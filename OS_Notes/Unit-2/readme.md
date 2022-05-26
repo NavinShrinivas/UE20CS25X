@@ -50,7 +50,7 @@
 
 ### Amdahl's law 
 - the serial part of the program has large effect of the amount of speed gained by multicore systems. 
-- speedup = 1/(S+(1-S)/N), As N=>INF speedup => s.
+- speedup = 1/(S+(1-S)/N), As N=>INF speedup => 1/s.
 
 
 ## Threads 
